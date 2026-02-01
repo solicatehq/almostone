@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almost Zero - Marketing-as-a-Service</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS with Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Instrument Serif', 'serif'],
+            },
+            colors: {
+              pastel: {
+                lemon: "hsla(56, 85%, 89%, 1)",      // #fbf8cc
+                petal: "hsla(27, 92%, 90%, 1)",      // #fde4cf
+                rose: "hsla(356, 100%, 91%, 1)",     // #ffcfd2
+                orchid: "hsla(311, 64%, 85%, 1)",    // #f1c0e8
+                mauve: "hsla(263, 64%, 84%, 1)",     // #cfbaf0
+                ice: "hsla(215, 77%, 80%, 1)",       // #a3c4f3
+                frosted: "hsla(195, 82%, 76%, 1)",   // #90dbf4
+                aqua: "hsla(185, 84%, 76%, 1)",      // #8eecf5
+                mint: "hsla(167, 82%, 78%, 1)",      // #98f5e1
+                celadon: "hsla(126, 89%, 85%, 1)",   // #b9fbc0
+              }
+            },
+            backgroundImage: {
+              'rainbow-gradient': "linear-gradient(90deg, #fbf8cc, #ffcfd2, #cfbaf0, #90dbf4, #b9fbc0)",
+              'soft-glow': "radial-gradient(circle at 50% 50%, rgba(251, 248, 204, 0.5), rgba(255, 255, 255, 0))",
+              'glass-shine': "linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 70%)"
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'bounce-soft': 'bounce-soft 2s infinite',
+              'scroll': 'scroll 25s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              'bounce-soft': {
+                 '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)' },
+                 '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)' }
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fafafa;
+        overflow-x: hidden;
+      }
+      /* Hide scrollbar for clean look in chrome */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.29.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
