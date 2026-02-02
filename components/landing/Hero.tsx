@@ -24,8 +24,8 @@ export const Hero: React.FC = () => {
         {/* Headline - Trimmed & Punched Up */}
         <AnimateInView delay={0.2} className="relative z-20">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-slate-900 leading-[1.1] mb-6 tracking-tight">
-            ₹120 Cr+ Marketing Experience. <br />
-            Just <span className="bg-clip-text text-transparent bg-rainbow-gradient italic px-2">₹33/day.</span>
+            ₹120 Cr+ Marketing <br />
+            Experience. Just <span className="bg-clip-text text-transparent bg-rainbow-gradient italic px-2">₹33/day.</span>
           </h1>
         </AnimateInView>
 
