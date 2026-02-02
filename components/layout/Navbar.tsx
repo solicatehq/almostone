@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
         {/* CTA */}
         <div className="flex items-center gap-3">
           <a href="#" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900">Sign In</a>
-          <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-slate-900 pl-5 pr-4 py-2 rounded-full text-lg font-serif italic font-bold shadow-md shadow-pastel-mauve/30 hover:shadow-lg hover:shadow-pastel-mauve/40 hover:-translate-y-0.5 hover:scale-105 transition-all active:scale-95">
+          <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-white pl-5 pr-4 py-2 rounded-full text-lg font-serif italic font-bold shadow-md shadow-pastel-mauve/30 hover:shadow-lg hover:shadow-pastel-mauve/40 hover:-translate-y-0.5 hover:scale-105 transition-all active:scale-95">
             Onboard
             <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
           </button>

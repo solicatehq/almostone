@@ -41,7 +41,7 @@ export const FloatingCTA: React.FC = () => {
                     transition={{ duration: 0.3 }}
                     className="fixed bottom-6 right-6 z-50 md:bottom-8 md:right-8"
                 >
-                    <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-slate-900 pl-5 pr-4 py-3 rounded-full text-lg font-serif italic font-bold shadow-lg shadow-pastel-mauve/40 hover:shadow-xl hover:shadow-pastel-mauve/50 hover:scale-105 transition-all active:scale-95">
+                    <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-white pl-5 pr-4 py-3 rounded-full text-lg font-serif italic font-bold shadow-lg shadow-pastel-mauve/40 hover:shadow-xl hover:shadow-pastel-mauve/50 hover:scale-105 transition-all active:scale-95">
                         Onboard
                         <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
                     </button>
