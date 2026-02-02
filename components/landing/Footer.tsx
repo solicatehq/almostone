@@ -17,7 +17,7 @@ const XIcon = ({ className }: { className?: string }) => (
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative pt-24 pb-12 overflow-hidden border-t border-slate-200 bg-white">
+    <footer className="relative pt-12 pb-6 overflow-hidden border-t border-slate-200 bg-white">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Large Background Text */}
@@ -108,7 +108,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-20 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 relative z-10">
+        <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 relative z-10">
           <p>© {new Date().getFullYear()} Almost Zero. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Crafted with <span className="text-red-500">❤</span> for Growth.
