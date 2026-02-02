@@ -1,37 +1,118 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
-import { AnimateInView } from '../ui/AnimateInView';
+
+import { Rocket, Github } from 'lucide-react';
+
+const XIcon = ({ className }: { className?: string }) => (
+  <svg
+    role="img"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    className={className}
+  >
+    <title>X</title>
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+  </svg>
+);
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative pt-32 pb-12 px-4 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-pastel-ice/20 to-white -z-20"></div>
-      
-      <div className="max-w-4xl mx-auto text-center">
-        <AnimateInView>
-            <h2 className="text-5xl md:text-7xl font-serif text-slate-900 mb-8 tracking-tight">
-                Ready to dominate <br/>
-                <span className="bg-clip-text text-transparent bg-rainbow-gradient">your market?</span>
-            </h2>
-            <p className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">
-                Join hundreds of founders scaling their revenue with Almost Zero's expert guidance.
-            </p>
-            
-            <button className="group relative inline-flex items-center gap-3 bg-slate-900 text-white px-10 py-5 rounded-full text-xl font-medium overflow-hidden transition-all hover:scale-105 shadow-2xl shadow-pastel-mauve/40 hover:shadow-pastel-mauve/60">
-                <span className="relative z-10 group-hover:text-pastel-lemon transition-colors">Get Onboarded Now</span>
-                <ArrowUpRight className="relative z-10 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-pastel-lemon transition-all" />
-                <div className="absolute inset-0 bg-rainbow-gradient opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-            </button>
-        </AnimateInView>
+    <footer className="relative pt-24 pb-12 overflow-hidden border-t border-slate-200 bg-white">
+      {/* Background Elements */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Large Background Text */}
+        <span className="absolute bottom-[-30%] left-1/2 -translate-x-1/2 text-[18vw] font-bold text-slate-950/[0.05] whitespace-nowrap select-none tracking-tight">
+          AlmostOne
+        </span>
 
-        <div className="mt-32 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
-            <p>© 2024 Almost Zero. Crafted for Growth.</p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-                <a href="#" className="hover:text-slate-600">Privacy</a>
-                <a href="#" className="hover:text-slate-600">Terms</a>
-                <a href="#" className="hover:text-slate-600">Twitter</a>
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
+          {/* Brand Column */}
+          <div className="md:col-span-5 space-y-6">
+            <div className="flex items-center gap-2 group cursor-pointer">
+              <div className="bg-gradient-to-tr from-pastel-frosted to-pastel-ice p-1.5 rounded-lg text-white group-hover:rotate-12 transition-transform">
+                <Rocket size={20} fill="white" />
+              </div>
+              <span className="font-serif text-2xl font-bold text-slate-800 tracking-tight">Almost Zero</span>
             </div>
+
+            <p className="text-slate-500 max-w-sm text-lg leading-relaxed">
+              Join hundreds of founders scaling their revenue with Almost Zero's expert guidance. Personalized learning that adapts to your needs.
+            </p>
+
+            <div className="flex space-x-5 pt-2">
+              <a href="#" className="text-slate-400 hover:text-slate-900 transition-colors">
+                <XIcon className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-slate-400 hover:text-slate-900 transition-colors">
+                <Github className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Spacer */}
+          <div className="md:col-span-2 hidden md:block"></div>
+
+          {/* Resources Column */}
+          <div className="md:col-span-2">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900 mb-6">Product</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#features" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Features
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a href="#resources" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Resources
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Column */}
+          <div className="md:col-span-3">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900 mb-6">Company</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="#" className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors text-sm">
+                  Sign In
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-20 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 relative z-10">
+          <p>© {new Date().getFullYear()} Almost Zero. All rights reserved.</p>
+          <p className="flex items-center gap-1">
+            Crafted with <span className="text-red-500">❤</span> for Growth.
+          </p>
         </div>
       </div>
     </footer>
