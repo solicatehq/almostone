@@ -13,11 +13,13 @@ import { Resources } from './components/landing/Resources';
 import { FAQ } from './components/landing/FAQ';
 import { Footer } from './components/landing/Footer';
 import { CustomCursor } from './components/ui/CustomCursor';
+import { FloatingCTA } from './components/ui/FloatingCTA';
 
 function App() {
   return (
     <div className="min-h-screen font-sans selection:bg-pastel-lemon selection:text-slate-900 cursor-none">
       <CustomCursor />
+      <FloatingCTA />
       <Navbar />
       <main>
         <Hero />
