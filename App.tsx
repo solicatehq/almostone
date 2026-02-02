@@ -12,10 +12,12 @@ import { Pricing } from './components/landing/Pricing';
 import { Resources } from './components/landing/Resources';
 import { FAQ } from './components/landing/FAQ';
 import { Footer } from './components/landing/Footer';
+import { CustomCursor } from './components/ui/CustomCursor';
 
 function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-pastel-lemon selection:text-slate-900">
+    <div className="min-h-screen font-sans selection:bg-pastel-lemon selection:text-slate-900 cursor-none">
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />
