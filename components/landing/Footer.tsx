@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Rocket, Github } from 'lucide-react';
 
@@ -16,6 +16,7 @@ const XIcon = ({ className }: { className?: string }) => (
 );
 
 export const Footer: React.FC = () => {
+  const [showTooltip, setShowTooltip] = useState(false);
   return (
     <footer className="relative pt-12 pb-6 overflow-hidden border-t border-slate-200 bg-white">
       {/* Background Elements */}
@@ -108,10 +109,29 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Copyright */}
-        <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 relative z-10">
+        <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-center items-center gap-6 text-sm text-slate-500 relative z-10">
           <p>© {new Date().getFullYear()} Almost Zero. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Crafted with <span className="text-red-500">❤</span> for Growth.
+
+            <div
+              className="relative ml-2 cursor-pointer group flex items-center"
+              onMouseEnter={() => setShowTooltip(true)}
+              onMouseLeave={() => setShowTooltip(false)}
+              onClick={() => setShowTooltip(!showTooltip)}
+            >
+              <span className="flex items-center justify-center w-4 h-4 text-[10px] font-medium text-slate-400 border border-slate-200 rounded-full hover:bg-slate-50 hover:text-slate-600 transition-colors">?</span>
+
+              <div className={`absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 w-64 p-4 bg-white/95 backdrop-blur-md shadow-xl rounded-xl text-left border border-white/20 ring-1 ring-slate-900/5 transition-all duration-300 origin-bottom z-50 ${showTooltip ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'}`}>
+                <p className="normal-case text-slate-600 text-xs leading-relaxed font-sans">
+                  This experience is crafted by <span className="font-medium text-slate-900">Solicate</span>, a creative brand agency.
+                </p>
+                <div className="mt-2 text-[10px] text-slate-400 font-sans border-t border-slate-100 pt-2">
+                  For more details contact <a href="https://solicate.in" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900 transition-colors">solicate.in</a>
+                </div>
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 -mt-1 border-4 border-transparent border-t-white/95"></div>
+              </div>
+            </div>
           </p>
         </div>
       </div>
