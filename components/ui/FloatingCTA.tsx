@@ -41,10 +41,13 @@ export const FloatingCTA: React.FC = () => {
                     transition={{ duration: 0.3 }}
                     className="fixed bottom-6 right-6 z-50 md:bottom-8 md:right-8"
                 >
-                    <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-white pl-5 pr-4 py-3 rounded-full text-lg font-serif italic font-bold shadow-lg shadow-pastel-mauve/40 hover:shadow-xl hover:shadow-pastel-mauve/50 hover:scale-105 transition-all active:scale-95">
-                        Onboard
-                        <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
-                    </button>
+                    <div className="relative group inline-flex">
+                        <div className="absolute -inset-1 bg-rainbow-gradient rounded-full blur opacity-60 group-hover:opacity-100 transition duration-500 will-change-transform"></div>
+                        <button className="relative flex items-center gap-2 bg-white text-slate-900 px-6 py-3 rounded-full text-lg font-bold font-serif italic transition-all hover:scale-105">
+                            <span className="relative z-10">Onboard</span>
+                            <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1 transition-transform" />
+                        </button>
+                    </div>
                 </motion.div>
             )}
         </AnimatePresence>

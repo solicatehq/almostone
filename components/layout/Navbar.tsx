@@ -24,10 +24,13 @@ export const Navbar: React.FC = () => {
         {/* CTA */}
         <div className="flex items-center gap-3">
           <a href="#" className="hidden md:block text-sm font-medium text-slate-600 hover:text-slate-900">Sign In</a>
-          <button className="group flex items-center gap-1.5 bg-rainbow-gradient text-white pl-5 pr-4 py-2 rounded-full text-lg font-serif italic font-bold shadow-md shadow-pastel-mauve/30 hover:shadow-lg hover:shadow-pastel-mauve/40 hover:-translate-y-0.5 hover:scale-105 transition-all active:scale-95">
-            Onboard
-            <ArrowRight size={18} className="group-hover:translate-x-0.5 transition-transform" />
-          </button>
+          <div className="relative group inline-flex">
+            <div className="absolute -inset-0.5 bg-rainbow-gradient rounded-full blur opacity-60 group-hover:opacity-100 transition duration-500 will-change-transform"></div>
+            <button className="relative flex items-center gap-2 bg-white text-slate-900 px-6 py-2.5 rounded-full text-base font-bold font-serif italic transition-all hover:scale-105">
+              <span className="relative z-10">Onboard</span>
+              <ArrowRight size={18} className="relative z-10 group-hover:translate-x-1 transition-transform" />
+            </button>
+          </div>
           <button className="md:hidden text-slate-600">
             <Menu size={24} />
           </button>
