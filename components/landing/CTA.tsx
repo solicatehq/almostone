@@ -18,11 +18,13 @@ export const CTA: React.FC = () => {
             Join hundreds of founders scaling their revenue with Almost Zero's expert guidance.
           </p>
 
-          <button className="group relative inline-flex items-center gap-3 bg-slate-900 text-white px-10 py-5 rounded-full text-xl font-medium overflow-hidden transition-all hover:scale-105 shadow-2xl shadow-pastel-mauve/40 hover:shadow-pastel-mauve/60">
-            <span className="relative z-10 group-hover:text-pastel-lemon transition-colors">Get Onboarded Now</span>
-            <ArrowUpRight className="relative z-10 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-pastel-lemon transition-all" />
-            <div className="absolute inset-0 bg-rainbow-gradient opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-          </button>
+          <div className="relative group inline-flex">
+            <div className="absolute -inset-1 bg-rainbow-gradient rounded-full blur opacity-60 group-hover:opacity-100 transition duration-500 will-change-transform"></div>
+            <button className="relative flex items-center gap-3 bg-white text-slate-900 px-10 py-5 rounded-full text-xl font-medium transition-all hover:scale-105">
+              <span className="relative z-10">Get Onboarded Now</span>
+              <ArrowUpRight className="relative z-10 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </button>
+          </div>
         </AnimateInView>
       </div>
     </footer>
