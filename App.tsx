@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/landing/Hero';
+import { MockSection } from './components/landing/MockSection';
 import { LogoMarquee } from './components/landing/LogoMarquee';
 import { Comparison } from './components/landing/Comparison';
 import { Features } from './components/landing/Features';
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <main>
         <Hero />
+        <MockSection />
         <LogoMarquee />
         <Comparison />
         <Features />
