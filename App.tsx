@@ -14,6 +14,7 @@ import { FAQ } from './components/landing/FAQ';
 import { Footer } from './components/landing/Footer';
 import { CustomCursor } from './components/ui/CustomCursor';
 import { FloatingCTA } from './components/ui/FloatingCTA';
+import { CTA } from './components/landing/CTA';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Pricing />
         <Resources />
         <FAQ />
+        <CTA />
       </main>
       <Footer />
     </div>
