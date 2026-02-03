@@ -2,24 +2,20 @@ import React from 'react';
 import { Check, Sparkles, ArrowRight } from 'lucide-react';
 import { AnimateInView } from '../ui/AnimateInView';
 
+// Two-card layout: Growth (left) and Enterprise contact (right)
 const plans = [
-    {
-        name: "Starter",
-        price: "Free",
-        desc: "For solo founders just getting started.",
-        features: ["Access to Ad Library", "Basic AI Copywriting", "Community Support"],
-        cta: "Start Free",
-        popular: false,
-        bg: "bg-white",
-        border: "border-slate-200"
-    },
     {
         name: "Growth",
         price: "₹999",
         period: "/month",
         priceNote: "approx ₹33/day",
         desc: "The full marketing stack for scaling brands.",
-        features: ["Unlimited AI Creative Gen", "Weekly Strategy Calls", "Performance Dashboard", "Competitor Analysis"],
+        features: [
+            "Unlimited AI Creative Gen",
+            "Weekly Strategy Calls",
+            "Performance Dashboard",
+            "Competitor Analysis"
+        ],
         cta: "Get Onboarded",
         popular: true,
         bg: "bg-slate-900",
@@ -27,11 +23,16 @@ const plans = [
         text: "text-white"
     },
     {
-        name: "Scale",
-        price: "₹4,999",
-        period: "/month",
+        name: "Enterprise",
+        price: "Custom",
+        period: "pricing",
         desc: "Dedicated agency team for high volume.",
-        features: ["Dedicated Account Manager", "Custom Video Production", "Multi-channel Attribution", "Slack Connect Channel"],
+        features: [
+            "Dedicated Account Manager",
+            "Custom Video Production",
+            "Multi-channel Attribution",
+            "Slack Connect Channel"
+        ],
         cta: "Contact Sales",
         popular: false,
         bg: "bg-white",
@@ -52,7 +53,7 @@ export const Pricing: React.FC = () => {
                     </p>
                 </AnimateInView>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {plans.map((plan, i) => (
                         <AnimateInView key={i} delay={i * 0.1} className={`relative rounded-3xl p-8 border ${plan.border} ${plan.bg} ${plan.popular ? 'shadow-2xl shadow-pastel-mauve/20 scale-105 z-10' : 'shadow-sm'}`}>
                             {plan.popular && (
