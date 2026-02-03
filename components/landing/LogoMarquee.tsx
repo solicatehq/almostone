@@ -10,7 +10,7 @@ export const LogoMarquee: React.FC = () => {
       <div className="container mx-auto px-4 mb-8 text-center">
         <span className="text-xs font-bold text-slate-400 uppercase tracking-widest bg-slate-50 px-3 py-1 rounded-full">As seen on Shark Tank India</span>
       </div>
-      
+
       <div className="relative flex overflow-x-hidden group">
         <div className="animate-scroll flex space-x-16 whitespace-nowrap py-4">
           {/* Repeat logos multiple times for smooth infinite scroll */}
@@ -20,7 +20,7 @@ export const LogoMarquee: React.FC = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Fade edges */}
         <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10"></div>
         <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10"></div>
