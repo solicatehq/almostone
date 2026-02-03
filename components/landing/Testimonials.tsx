@@ -19,15 +19,22 @@ const testimonialsRaw = [
     quote: "It feels like having a CMO in your pocket. The 'Shark Tank' expertise really shows in their growth hacks.",
     author: "Rahul M.",
     role: "CEO, Tech Startup",
-    bg: "bg-pastel-orchid/20",
-    border: "border-pastel-orchid/50"
+    bg: "bg-emerald-50/50",
+    border: "border-emerald-200"
   },
   {
     quote: "The AI creative generator is a game changer. We produce 10x more ad variations now for a fraction of the cost.",
     author: "Sarah L.",
     role: "Marketing Head",
-    bg: "bg-pastel-lemon/20",
-    border: "border-pastel-lemon/50"
+    bg: "bg-yellow-50/50",
+    border: "border-yellow-200"
+  },
+  {
+    quote: "Finally an agency that understands speed. We launched 5 new product lines in a month.",
+    author: "Arjun K.",
+    role: "Co-Founder, SaaS",
+    bg: "bg-pastel-orchid/20",
+    border: "border-pastel-orchid/50"
   }
 ];
 
