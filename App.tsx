@@ -7,7 +7,7 @@ import { Comparison } from './components/landing/Comparison';
 import { Features } from './components/landing/Features';
 
 import { Process } from './components/landing/Process';
-import { InteractiveDemo } from './components/landing/InteractiveDemo';
+
 import { Testimonials } from './components/landing/Testimonials';
 import { Pricing } from './components/landing/Pricing';
 import { Resources } from './components/landing/Resources';
@@ -31,7 +31,7 @@ function App() {
         <Features />
 
         <Process />
-        <InteractiveDemo />
+
         <Testimonials />
         <Pricing />
         <Resources />
