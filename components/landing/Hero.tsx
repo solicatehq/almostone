@@ -4,7 +4,7 @@ import { AnimateInView } from '../ui/AnimateInView';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 overflow-hidden bg-white">
+    <section className="relative min-h-screen flex flex-col justify-center pt-32 pb-20 md:pt-48 md:pb-32 px-4 overflow-hidden bg-white">
       {/* Background Gradients/Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-pastel-lemon/20 rounded-full blur-[100px]" />
@@ -51,60 +51,60 @@ export const Hero: React.FC = () => {
           </button>
         </AnimateInView>
 
-        {/* Floating Cards - Marketing Specific Stats */}
+      </div>
 
-        {/* Top Left: ROAS */}
-        <div className="hidden xl:block absolute top-20 left-[2%] 2xl:left-[8%] animate-float" style={{ animationDelay: '0s' }}>
-          <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[180px] transform rotate-[-3deg]">
-            <div className="p-2.5 bg-pastel-mint/30 rounded-lg text-emerald-700">
-              <TrendingUp size={24} />
-            </div>
-            <div className="text-left">
-              <p className="text-2xl font-bold text-slate-900">4.5x</p>
-              <p className="text-sm text-slate-500 font-medium">Avg. ROAS</p>
-            </div>
+      {/* Floating Cards - Marketing Specific Stats */}
+
+      {/* Top Left: ROAS */}
+      <div className="hidden xl:block absolute top-[22%] left-[15%] 2xl:left-[22%] animate-float" style={{ animationDelay: '0s' }}>
+        <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[180px] transform rotate-[-3deg]">
+          <div className="p-2.5 bg-pastel-mint/30 rounded-lg text-emerald-700">
+            <TrendingUp size={24} />
+          </div>
+          <div className="text-left">
+            <p className="text-2xl font-bold text-slate-900">4.5x</p>
+            <p className="text-sm text-slate-500 font-medium">Avg. ROAS</p>
           </div>
         </div>
+      </div>
 
-        {/* Top Right: Leads Generated */}
-        <div className="hidden xl:block absolute top-24 right-[2%] 2xl:right-[8%] animate-float" style={{ animationDelay: '1.5s' }}>
-          <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[200px] transform rotate-[2deg]">
-            <div className="text-left">
-              <p className="text-2xl font-bold text-slate-900">50k+</p>
-              <p className="text-sm text-slate-500 font-medium">Leads Generated</p>
-            </div>
-            <div className="w-10 h-10 rounded-full bg-pastel-mauve/30 flex items-center justify-center text-purple-700">
-              <Target size={20} />
-            </div>
+      {/* Top Right: Leads Generated */}
+      <div className="hidden xl:block absolute top-[25%] right-[15%] 2xl:right-[22%] animate-float" style={{ animationDelay: '1.5s' }}>
+        <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[200px] transform rotate-[2deg]">
+          <div className="text-left">
+            <p className="text-2xl font-bold text-slate-900">50k+</p>
+            <p className="text-sm text-slate-500 font-medium">Leads Generated</p>
+          </div>
+          <div className="w-10 h-10 rounded-full bg-pastel-mauve/30 flex items-center justify-center text-purple-700">
+            <Target size={20} />
           </div>
         </div>
+      </div>
 
-        {/* Middle Left: Ad Spend */}
-        <div className="hidden xl:block absolute top-[60%] left-[5%] 2xl:left-[12%] animate-float" style={{ animationDelay: '0.8s' }}>
-          <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform rotate-2">
-            <div className="w-10 h-10 bg-pastel-ice/30 rounded-full flex items-center justify-center text-blue-600">
-              <PieChart size={20} />
-            </div>
-            <div className="text-left pr-2">
-              <p className="text-lg font-bold text-slate-900 leading-tight">₹50 Cr+</p>
-              <p className="text-xs text-slate-500 font-medium leading-tight">Ad Spend<br />Managed</p>
-            </div>
+      {/* Middle Left: Ad Spend */}
+      <div className="hidden xl:block absolute bottom-[25%] left-[15%] 2xl:left-[22%] animate-float" style={{ animationDelay: '0.8s' }}>
+        <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform rotate-2">
+          <div className="w-10 h-10 bg-pastel-ice/30 rounded-full flex items-center justify-center text-blue-600">
+            <PieChart size={20} />
+          </div>
+          <div className="text-left pr-2">
+            <p className="text-lg font-bold text-slate-900 leading-tight">₹50 Cr+</p>
+            <p className="text-xs text-slate-500 font-medium leading-tight">Ad Spend<br />Managed</p>
           </div>
         </div>
+      </div>
 
-        {/* Middle Right: CPA */}
-        <div className="hidden xl:block absolute top-[55%] right-[8%] 2xl:right-[15%] animate-float" style={{ animationDelay: '2.2s' }}>
-          <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform -rotate-2">
-            <div className="text-left pl-1">
-              <p className="text-lg font-bold text-slate-900 leading-tight">₹12</p>
-              <p className="text-xs text-slate-500 font-medium leading-tight">Avg. Cost<br />Per Lead</p>
-            </div>
-            <div className="w-10 h-10 bg-pastel-rose/30 rounded-full flex items-center justify-center text-rose-600">
-              <Tag size={20} />
-            </div>
+      {/* Middle Right: CPA */}
+      <div className="hidden xl:block absolute bottom-[28%] right-[15%] 2xl:right-[22%] animate-float" style={{ animationDelay: '2.2s' }}>
+        <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform -rotate-2">
+          <div className="text-left pl-1">
+            <p className="text-lg font-bold text-slate-900 leading-tight">₹12</p>
+            <p className="text-xs text-slate-500 font-medium leading-tight">Avg. Cost<br />Per Lead</p>
+          </div>
+          <div className="w-10 h-10 bg-pastel-rose/30 rounded-full flex items-center justify-center text-rose-600">
+            <Tag size={20} />
           </div>
         </div>
-
       </div>
 
       {/* Bottom Trusted Text */}
