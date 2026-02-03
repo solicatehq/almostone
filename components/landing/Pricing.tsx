@@ -2,48 +2,13 @@ import React from 'react';
 import { Check, Sparkles, ArrowRight } from 'lucide-react';
 import { AnimateInView } from '../ui/AnimateInView';
 
-// Two-card layout: Growth (left) and Enterprise contact (right)
-const plans = [
-    {
-        name: "Growth",
-        price: "₹999",
-        period: "/month",
-        priceNote: "approx ₹33/day",
-        desc: "The full marketing stack for scaling brands.",
-        features: [
-            "Unlimited AI Creative Gen",
-            "Weekly Strategy Calls",
-            "Performance Dashboard",
-            "Competitor Analysis"
-        ],
-        cta: "Get Onboarded",
-        popular: true,
-        bg: "bg-slate-900",
-        border: "border-slate-900",
-        text: "text-white"
-    },
-    {
-        name: "Enterprise",
-        price: "Custom",
-        period: "pricing",
-        desc: "Dedicated agency team for high volume.",
-        features: [
-            "Dedicated Account Manager",
-            "Custom Video Production",
-            "Multi-channel Attribution",
-            "Slack Connect Channel"
-        ],
-        cta: "Contact Sales",
-        popular: false,
-        bg: "bg-white",
-        border: "border-slate-200"
-    }
-];
-
 export const Pricing: React.FC = () => {
     return (
-        <section id="pricing" className="py-24 px-4 bg-slate-50">
-            <div className="max-w-6xl mx-auto">
+        <section id="pricing" className="py-24 px-4 bg-slate-50 relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pastel-mauve/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div className="max-w-6xl mx-auto relative z-10">
                 <AnimateInView className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">
                         Simple pricing, <span className="text-pastel-mauve italic">maximum ROI.</span>
@@ -53,46 +18,100 @@ export const Pricing: React.FC = () => {
                     </p>
                 </AnimateInView>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    {plans.map((plan, i) => (
-                        <AnimateInView key={i} delay={i * 0.1} className={`relative rounded-3xl p-8 border ${plan.border} ${plan.bg} ${plan.popular ? 'shadow-2xl shadow-pastel-mauve/20 scale-105 z-10' : 'shadow-sm'}`}>
-                            {plan.popular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-pastel-mauve to-pastel-ice text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full shadow-md flex items-center gap-1">
-                                    <Sparkles size={12} /> Most Popular
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    {/* Growth Plan - The "Premium/Almost Zero" aesthetic */}
+                    <AnimateInView className="group relative h-full">
+                        <div className="relative h-full bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+                            {/* Mesh Gradient */}
+                            <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700">
+                                <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[spin_15s_linear_infinite]"
+                                    style={{
+                                        background: 'conic-gradient(from 0deg at 50% 50%, #FFB6C1 0deg, #E6E6FA 60deg, #98FF98 120deg, #87CEFA 180deg, #FFB6C1 360deg)',
+                                        filter: 'blur(80px)'
+                                    }}>
                                 </div>
-                            )}
-                            
-                            <h3 className={`text-xl font-bold mb-2 ${plan.text || 'text-slate-900'}`}>{plan.name}</h3>
-                            <div className="flex items-baseline gap-1 mb-1">
-                                <span className={`text-4xl font-serif font-bold ${plan.text || 'text-slate-900'}`}>{plan.price}</span>
-                                {plan.period && <span className={`text-sm ${plan.text ? 'text-slate-400' : 'text-slate-500'}`}>{plan.period}</span>}
                             </div>
-                            {plan.priceNote && <div className="text-xs text-pastel-mint font-medium mb-6">{plan.priceNote}</div>}
-                            {!plan.priceNote && <div className="h-4 mb-6"></div>}
+                            {/* Noise */}
+                            <div className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
+                                style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}>
+                            </div>
 
-                            <p className={`text-sm mb-8 ${plan.text ? 'text-slate-400' : 'text-slate-500'}`}>{plan.desc}</p>
+                            {/* Content */}
+                            <div className="relative z-10">
+                                {/* Badge */}
+                                <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                                    <Sparkles size={12} className="text-pastel-lemon" />
+                                    <span className="font-semibold text-white/90 text-sm tracking-widest uppercase">Most Popular</span>
+                                </div>
 
-                            <ul className="space-y-4 mb-8">
-                                {plan.features.map((feat, idx) => (
-                                    <li key={idx} className="flex items-start gap-3 text-sm">
-                                        <div className={`mt-0.5 min-w-[16px] h-4 rounded-full flex items-center justify-center ${plan.popular ? 'bg-pastel-mint text-slate-900' : 'bg-slate-100 text-slate-600'}`}>
-                                            <Check size={10} strokeWidth={3} />
-                                        </div>
-                                        <span className={plan.text ? 'text-slate-300' : 'text-slate-600'}>{feat}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                                <h3 className="text-2xl font-bold text-white mb-2">Growth</h3>
+                                <div className="flex items-baseline gap-1 mb-1">
+                                    <span className="text-5xl font-serif font-bold text-white">₹999</span>
+                                    <span className="text-slate-400">/month</span>
+                                </div>
+                                <div className="text-xs text-pastel-mint font-medium mb-8">approx ₹33/day</div>
 
-                            <button className={`group w-full py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 ${
-                                plan.popular 
-                                ? 'bg-white text-slate-900 hover:bg-pastel-lemon hover:scale-105 shadow-lg shadow-black/5' 
-                                : 'bg-slate-900 text-white hover:bg-slate-800 hover:scale-[1.02]'
-                            }`}>
-                                {plan.cta}
-                                {plan.popular && <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />}
-                            </button>
-                        </AnimateInView>
-                    ))}
+                                <p className="text-slate-300 mb-8 border-b border-white/10 pb-8">The full marketing stack for scaling brands.</p>
+
+                                <ul className="space-y-4 mb-8">
+                                    {["Unlimited AI Creative Gen", "Weekly Strategy Calls", "Performance Dashboard", "Competitor Analysis"].map((feat, idx) => (
+                                        <li key={idx} className="flex items-center gap-3 text-sm">
+                                            <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-green-400 to-emerald-500 flex items-center justify-center shadow-lg shadow-green-900/20 group-hover:scale-110 transition-transform duration-300">
+                                                <Check size={14} className="text-white" strokeWidth={3} />
+                                            </div>
+                                            <span className="text-white/90">{feat}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <button className="w-full py-4 rounded-xl font-bold bg-white text-slate-900 hover:bg-pastel-lemon transition-all flex items-center justify-center gap-2 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                                    Get Onboarded
+                                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </button>
+                            </div>
+                        </div>
+                    </AnimateInView>
+
+                    {/* Enterprise Plan - Clean, Corporate but Stylized */}
+                    <AnimateInView delay={0.2} className="group relative h-full">
+                        <div className="relative h-full bg-[#F5F5F7] p-8 md:p-12 rounded-[2.5rem] border border-slate-200/60 overflow-hidden transition-all duration-500 hover:border-slate-300 hover:shadow-xl">
+                            {/* Subtle Grid Background */}
+                            <div className="absolute inset-0 opacity-[0.03]"
+                                style={{
+                                    backgroundImage: `linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px)`,
+                                    backgroundSize: '20px 20px'
+                                }}>
+                            </div>
+
+                            <div className="relative z-10">
+                                <div className="h-[34px] mb-8"></div> {/* Spacer to align with badge */}
+
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Enterprise</h3>
+                                <div className="flex items-baseline gap-1 mb-1">
+                                    <span className="text-5xl font-serif font-bold text-slate-900">Custom</span>
+                                </div>
+                                <div className="text-xs text-transparent font-medium mb-8 select-none">Pricing</div>
+
+
+                                <p className="text-slate-500 mb-8 border-b border-slate-200 pb-8">Dedicated agency team for high volume.</p>
+
+                                <ul className="space-y-4 mb-8">
+                                    {["Dedicated Account Manager", "Custom Video Production", "Multi-channel Attribution", "Slack Connect Channel"].map((feat, idx) => (
+                                        <li key={idx} className="flex items-center gap-3 text-sm">
+                                            <div className="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center group-hover:bg-slate-900 group-hover:text-white transition-colors duration-300">
+                                                <Check size={14} strokeWidth={3} />
+                                            </div>
+                                            <span className="text-slate-600">{feat}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+
+                                <button className="w-full py-4 rounded-xl font-bold bg-slate-200 text-slate-900 hover:bg-slate-900 hover:text-white transition-all flex items-center justify-center gap-2">
+                                    Contact Sales
+                                </button>
+                            </div>
+                        </div>
+                    </AnimateInView>
                 </div>
             </div>
         </section>
