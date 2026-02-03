@@ -5,7 +5,7 @@ import { MockSection } from './components/landing/MockSection';
 import { LogoMarquee } from './components/landing/LogoMarquee';
 import { Comparison } from './components/landing/Comparison';
 import { Features } from './components/landing/Features';
-import { TechStack } from './components/landing/TechStack';
+
 import { Process } from './components/landing/Process';
 import { InteractiveDemo } from './components/landing/InteractiveDemo';
 import { Testimonials } from './components/landing/Testimonials';
@@ -29,7 +29,7 @@ function App() {
         <LogoMarquee />
         <Comparison />
         <Features />
-        <TechStack />
+
         <Process />
         <InteractiveDemo />
         <Testimonials />
