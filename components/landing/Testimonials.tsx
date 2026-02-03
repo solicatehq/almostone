@@ -42,11 +42,11 @@ const testimonials = [
 const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => {
   return (
     <div className={cn(
-      "flex w-[350px] flex-col justify-between rounded-[2rem] p-8 transition-transform hover:scale-[1.02] border mx-4 select-none whitespace-normal h-full",
+      "flex w-[450px] flex-col justify-center gap-5 rounded-3xl p-6 transition-transform hover:scale-[1.02] border mx-4 select-none whitespace-normal h-full",
       testimonial.bg,
       testimonial.border
     )}>
-      <p className="text-lg text-slate-700 font-medium leading-relaxed mb-6">"{testimonial.quote}"</p>
+      <p className="text-lg text-slate-700 font-medium leading-snug">"{testimonial.quote}"</p>
       <div className="flex items-center gap-3">
         <div className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-sm font-bold text-slate-700 shrink-0">
           {testimonial.author[0]}
