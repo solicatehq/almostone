@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
       {/* Floating Cards - Marketing Specific Stats */}
 
       {/* Top Left: ROAS */}
-      <div className="hidden xl:block absolute top-[22%] left-[15%] 2xl:left-[22%] animate-float" style={{ animationDelay: '0s' }}>
+      <div className="absolute top-[12%] left-[5%] sm:left-[10%] xl:top-[22%] xl:left-[15%] 2xl:left-[22%] scale-[0.6] sm:scale-75 md:scale-90 xl:scale-100 transition-transform origin-center animate-float" style={{ animationDelay: '0s' }}>
         <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[180px] transform rotate-[-3deg]">
           <div className="p-2.5 bg-pastel-mint/30 rounded-lg text-emerald-700">
             <TrendingUp size={24} />
@@ -69,7 +69,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Top Right: Leads Generated */}
-      <div className="hidden xl:block absolute top-[25%] right-[15%] 2xl:right-[22%] animate-float" style={{ animationDelay: '1.5s' }}>
+      <div className="absolute top-[15%] right-[5%] sm:right-[10%] xl:top-[25%] xl:right-[15%] 2xl:right-[22%] scale-[0.6] sm:scale-75 md:scale-90 xl:scale-100 transition-transform origin-center animate-float" style={{ animationDelay: '1.5s' }}>
         <div className="bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-4 min-w-[200px] transform rotate-[2deg]">
           <div className="text-left">
             <p className="text-2xl font-bold text-slate-900">50k+</p>
@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Middle Left: Ad Spend */}
-      <div className="hidden xl:block absolute bottom-[25%] left-[15%] 2xl:left-[22%] animate-float" style={{ animationDelay: '0.8s' }}>
+      <div className="absolute bottom-[12%] left-[5%] sm:left-[10%] xl:bottom-[25%] xl:left-[15%] 2xl:left-[22%] scale-[0.6] sm:scale-75 md:scale-90 xl:scale-100 transition-transform origin-center animate-float" style={{ animationDelay: '0.8s' }}>
         <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform rotate-2">
           <div className="w-10 h-10 bg-pastel-ice/30 rounded-full flex items-center justify-center text-blue-600">
             <PieChart size={20} />
@@ -95,7 +95,7 @@ export const Hero: React.FC = () => {
       </div>
 
       {/* Middle Right: CPA */}
-      <div className="hidden xl:block absolute bottom-[28%] right-[15%] 2xl:right-[22%] animate-float" style={{ animationDelay: '2.2s' }}>
+      <div className="absolute bottom-[15%] right-[5%] sm:right-[10%] xl:bottom-[28%] xl:right-[15%] 2xl:right-[22%] scale-[0.6] sm:scale-75 md:scale-90 xl:scale-100 transition-transform origin-center animate-float" style={{ animationDelay: '2.2s' }}>
         <div className="bg-white p-3 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 flex items-center gap-3 transform -rotate-2">
           <div className="text-left pl-1">
             <p className="text-lg font-bold text-slate-900 leading-tight">₹12</p>
