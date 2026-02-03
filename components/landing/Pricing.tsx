@@ -19,7 +19,7 @@ export const Pricing: React.FC = () => {
                 </AnimateInView>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-                    {/* Growth Plan - The "Premium/Almost Zero" aesthetic */}
+                    {/* Growth Plan - The "Premium/Almost One" aesthetic */}
                     <AnimateInView className="group relative h-full">
                         <div className="relative h-full bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
                             {/* Mesh Gradient */}

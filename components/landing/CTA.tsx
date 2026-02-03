@@ -15,7 +15,7 @@ export const CTA: React.FC = () => {
             <span className="bg-clip-text text-transparent bg-rainbow-gradient">your market?</span>
           </h2>
           <p className="text-xl text-slate-500 mb-12 max-w-2xl mx-auto">
-            Join hundreds of founders scaling their revenue with Almost Zero's expert guidance.
+            Join hundreds of founders scaling their revenue with Almost One's expert guidance.
           </p>
 
           <div className="relative group inline-flex">

@@ -60,7 +60,7 @@ export const Comparison: React.FC = () => {
                         </div>
                     </AnimateInView>
 
-                    {/* Almost Zero - The "Magical/Premium" Aesthetic */}
+                    {/* Almost One - The "Magical/Premium" Aesthetic */}
                     <AnimateInView delay={0.2} className="group relative h-full">
                         <div className="relative h-full bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
 
@@ -93,7 +93,7 @@ export const Comparison: React.FC = () => {
                                 </div>
 
                                 <h3 className="text-3xl md:text-4xl font-serif text-white mb-2 leading-tight">
-                                    Almost Zero
+                                    Almost One
                                 </h3>
                                 <p className="text-white/60 mb-10 text-lg font-light">Creative freedom without the friction.</p>
 

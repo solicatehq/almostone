@@ -9,7 +9,7 @@ function cn(...inputs: ClassValue[]) {
 
 const testimonialsRaw = [
   {
-    quote: "We were burning cash on Facebook ads. Almost Zero fixed our creative strategy and ROAS jumped to 4x in 3 weeks.",
+    quote: "We were burning cash on Facebook ads. Almost One fixed our creative strategy and ROAS jumped to 4x in 3 weeks.",
     author: "Priya S.",
     role: "Founder, D2C Beauty",
     bg: "bg-pastel-ice/20",

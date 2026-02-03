@@ -38,11 +38,11 @@ export const Footer: React.FC = () => {
               <div className="bg-gradient-to-tr from-pastel-frosted to-pastel-ice p-1.5 rounded-lg text-white group-hover:rotate-12 transition-transform">
                 <Rocket size={20} fill="white" />
               </div>
-              <span className="font-serif text-2xl font-bold text-slate-800 tracking-tight">Almost Zero</span>
+              <span className="font-serif text-2xl font-bold text-slate-800 tracking-tight">Almost One</span>
             </div>
 
             <p className="text-slate-500 max-w-sm text-lg leading-relaxed">
-              Join hundreds of founders scaling their revenue with Almost Zero's expert guidance. Personalized learning that adapts to your needs.
+              Join hundreds of founders scaling their revenue with Almost One's expert guidance. Personalized learning that adapts to your needs.
             </p>
 
             <div className="flex space-x-5 pt-2">
@@ -110,7 +110,7 @@ export const Footer: React.FC = () => {
 
         {/* Copyright */}
         <div className="mt-10 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-center items-center gap-6 text-sm text-slate-500 relative z-10">
-          <p>© {new Date().getFullYear()} Almost Zero. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Almost One. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Crafted with <span className="text-red-500">❤</span> for Growth.
 

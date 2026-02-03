@@ -14,7 +14,7 @@ const faqs = [
     },
     {
         q: "Is there a minimum contract period?",
-        a: "Almost Zero means almost zero risk. We operate on a monthly subscription model. You can cancel anytime with just one click from your dashboard."
+        a: "Almost One means almost one risk. We operate on a monthly subscription model. You can cancel anytime with just one click from your dashboard."
     },
     {
         q: "Can you handle ad spend over ₹1 Crore?",

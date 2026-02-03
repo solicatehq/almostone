@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
           <div className="bg-gradient-to-tr from-pastel-frosted to-pastel-ice p-1.5 rounded-lg text-white group-hover:rotate-12 transition-transform">
             <Rocket size={20} fill="white" />
           </div>
-          <span className="font-serif text-2xl font-bold text-slate-800 tracking-tight">Almost Zero</span>
+          <span className="font-serif text-2xl font-bold text-slate-800 tracking-tight">Almost One</span>
         </div>
 
         {/* Desktop Links */}

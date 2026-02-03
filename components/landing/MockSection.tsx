@@ -21,7 +21,7 @@ export const MockSection: React.FC = () => {
                                 <div className="w-3 h-3 rounded-full bg-pastel-lemon/80"></div>
                                 <div className="w-3 h-3 rounded-full bg-pastel-mint/80"></div>
                             </div>
-                            <div className="mx-auto text-[10px] text-slate-400 font-mono bg-slate-50 px-3 py-1 rounded-full">almostzero.io/dashboard</div>
+                            <div className="mx-auto text-[10px] text-slate-400 font-mono bg-slate-50 px-3 py-1 rounded-full">almostone.io/dashboard</div>
                         </div>
 
                         {/* Dashboard Content */}
