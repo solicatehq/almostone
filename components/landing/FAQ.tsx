@@ -26,7 +26,7 @@ export const FAQ: React.FC = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
     return (
-        <section className="py-24 px-4 bg-slate-50">
+        <section className="py-24 px-4 bg-[#fafafa]">
             <div className="max-w-3xl mx-auto">
                 <AnimateInView className="text-center mb-16">
                     <h2 className="text-4xl font-serif text-slate-900">Common Questions</h2>

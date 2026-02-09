@@ -4,7 +4,7 @@ import { AnimateInView } from '../ui/AnimateInView';
 
 export const Pricing: React.FC = () => {
     return (
-        <section id="pricing" className="py-24 px-4 bg-slate-50 relative overflow-hidden">
+        <section id="pricing" className="py-24 px-4 bg-[#fafafa] relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pastel-mauve/10 rounded-full blur-3xl pointer-events-none"></div>
 

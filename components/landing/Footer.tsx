@@ -18,7 +18,7 @@ const XIcon = ({ className }: { className?: string }) => (
 export const Footer: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   return (
-    <footer className="relative pt-12 pb-6 overflow-hidden border-t border-slate-200 bg-white">
+    <footer className="relative pt-12 pb-6 overflow-hidden border-t border-slate-200 bg-[#fafafa]">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Large Background Text */}

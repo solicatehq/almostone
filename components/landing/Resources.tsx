@@ -28,7 +28,7 @@ const resources = [
 
 export const Resources: React.FC = () => {
     return (
-        <section id="resources" className="py-24 px-4 bg-white">
+        <section id="resources" className="py-24 px-4 bg-[#fafafa]">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-end mb-12">
                     <AnimateInView>
