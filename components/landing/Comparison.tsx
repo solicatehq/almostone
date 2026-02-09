@@ -60,42 +60,32 @@ export const Comparison: React.FC = () => {
                         </div>
                     </AnimateInView>
 
-                    {/* Almost One - The "Magical/Premium" Aesthetic */}
+                    {/* Almost One - The "Beach White" Aesthetic */}
                     <AnimateInView delay={0.2} className="group relative h-full">
-                        <div className="relative h-full bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-
-                            {/* Animated Mesh Gradient Background */}
-                            <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700">
-                                <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[spin_15s_linear_infinite]"
-                                    style={{
-                                        background: 'conic-gradient(from 0deg at 50% 50%, #FFB6C1 0deg, #E6E6FA 60deg, #98FF98 120deg, #87CEFA 180deg, #FFB6C1 360deg)',
-                                        filter: 'blur(80px)'
-                                    }}>
-                                </div>
-                            </div>
+                        <div className="relative h-full bg-gradient-to-br from-[#FFFDF5] to-[#F5FAFF] p-8 md:p-12 rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-[0_20px_50px_rgba(234,179,8,0.1)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_30px_60px_rgba(234,179,8,0.15)]">
 
                             {/* Noise Texture Overlay for Premium Feel */}
-                            <div className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
+                            <div className="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none"
                                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}>
                             </div>
 
                             {/* Large Watermark Typography */}
-                            <div className="absolute -bottom-10 -right-10 text-[10rem] font-black text-white/5 leading-none select-none pointer-events-none overflow-hidden">
+                            <div className="absolute -bottom-10 -right-10 text-[10rem] font-black text-slate-900/5 leading-none select-none pointer-events-none overflow-hidden">
                                 FAST
                             </div>
 
                             {/* Content */}
                             <div className="relative z-10">
                                 {/* Glowing Header Badge */}
-                                <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                                    <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-                                    <span className="font-semibold text-white/90 text-sm tracking-widest uppercase">The Future</span>
+                                <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-white border border-slate-200 mb-8 shadow-sm">
+                                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                    <span className="font-semibold text-slate-700 text-sm tracking-widest uppercase">The Future</span>
                                 </div>
 
-                                <h3 className="text-3xl md:text-4xl font-serif text-white mb-2 leading-tight">
+                                <h3 className="text-3xl md:text-4xl font-serif text-slate-900 mb-2 leading-tight">
                                     Almost One
                                 </h3>
-                                <p className="text-white/60 mb-10 text-lg font-light">Creative freedom without the friction.</p>
+                                <p className="text-slate-500 mb-10 text-lg font-light">Creative freedom without the friction.</p>
 
                                 <ul className="space-y-6">
                                     {[
@@ -108,11 +98,11 @@ export const Comparison: React.FC = () => {
                                             <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-green-400 to-emerald-500 flex items-center justify-center shadow-lg shadow-green-900/20 group-hover/item:scale-110 transition-transform duration-300">
                                                 <Check size={16} className="text-white" strokeWidth={3} />
                                             </div>
-                                            <span className="text-lg font-medium text-white/90">
+                                            <span className="text-lg font-medium text-slate-700">
                                                 {item.text.split(item.highlight).map((part, index, array) => (
                                                     <React.Fragment key={index}>
                                                         {part}
-                                                        {index < array.length - 1 && <span className="text-green-300 font-bold">{item.highlight}</span>}
+                                                        {index < array.length - 1 && <span className="text-green-600 font-bold">{item.highlight}</span>}
                                                     </React.Fragment>
                                                 ))}
                                             </span>

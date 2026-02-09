@@ -19,9 +19,9 @@ export const Features: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-[auto_auto] gap-6">
 
           {/* Card 1: AI Ads Generator - Premium Redesign (Performance Predator) */}
-          <AnimateInView className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 p-8 shadow-2xl shadow-emerald-900/5 hover:shadow-emerald-900/10 transition-all duration-500">
+          <AnimateInView className="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-[2.5rem] bg-slate-200 border border-slate-300 p-8 shadow-2xl shadow-emerald-900/5 hover:shadow-emerald-900/10 transition-all duration-500">
             {/* Background Gradients & Noise */}
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-white to-teal-50/30 opacity-60"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-slate-200 to-teal-50/30 opacity-60"></div>
             <div className="absolute top-0 right-0 w-64 h-64 bg-pastel-mint/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
             <div className="relative z-10 flex flex-col h-full">
@@ -91,7 +91,7 @@ export const Features: React.FC = () => {
           </AnimateInView>
 
           {/* Card 2: Expert Strategy */}
-          <AnimateInView delay={0.1} className="min-h-[300px] rounded-[2.5rem] bg-gradient-to-br from-white to-pastel-lemon/20 border border-slate-100 p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <AnimateInView delay={0.1} className="min-h-[300px] rounded-[2.5rem] bg-gradient-to-br from-slate-200 to-pastel-lemon/20 border border-slate-300 p-8 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
             <div className="w-12 h-12 bg-pastel-lemon/50 rounded-2xl flex items-center justify-center mb-6 text-slate-800">
               <Tv size={24} />
             </div>
@@ -106,7 +106,7 @@ export const Features: React.FC = () => {
           </AnimateInView>
 
           {/* Card 3: Instant Scale */}
-          <AnimateInView delay={0.2} className="min-h-[300px] rounded-[2.5rem] bg-gradient-to-br from-white to-pastel-ice/20 border border-slate-100 p-8 shadow-sm hover:shadow-md transition-all relative overflow-hidden flex flex-col justify-between">
+          <AnimateInView delay={0.2} className="min-h-[300px] rounded-[2.5rem] bg-gradient-to-br from-slate-200 to-pastel-ice/20 border border-slate-300 p-8 shadow-sm hover:shadow-md transition-all relative overflow-hidden flex flex-col justify-between">
             <div className="relative z-10">
               <div className="w-12 h-12 bg-pastel-ice/40 rounded-2xl flex items-center justify-center mb-6 text-slate-800">
                 <TrendingUp size={24} />

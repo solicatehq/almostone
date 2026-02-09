@@ -19,39 +19,31 @@ export const Pricing: React.FC = () => {
                 </AnimateInView>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-                    {/* Growth Plan - The "Premium/Almost One" aesthetic */}
+                    {/* Growth Plan - The "Beach White" aesthetic */}
                     <AnimateInView className="group relative h-full">
-                        <div className="relative h-full bg-slate-900 p-8 md:p-12 rounded-[2.5rem] border border-white/10 overflow-hidden shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-                            {/* Mesh Gradient */}
-                            <div className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity duration-700">
-                                <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[spin_15s_linear_infinite]"
-                                    style={{
-                                        background: 'conic-gradient(from 0deg at 50% 50%, #FFB6C1 0deg, #E6E6FA 60deg, #98FF98 120deg, #87CEFA 180deg, #FFB6C1 360deg)',
-                                        filter: 'blur(80px)'
-                                    }}>
-                                </div>
-                            </div>
+                        <div className="relative h-full bg-gradient-to-br from-[#FFFDF5] to-[#F5FAFF] p-8 md:p-12 rounded-[2.5rem] border border-slate-200 overflow-hidden shadow-[0_20px_50px_rgba(234,179,8,0.1)] transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_30px_60px_rgba(234,179,8,0.15)]">
+
                             {/* Noise */}
-                            <div className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"
+                            <div className="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none"
                                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E")` }}>
                             </div>
 
                             {/* Content */}
                             <div className="relative z-10">
                                 {/* Badge */}
-                                <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 mb-8 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                                    <Sparkles size={12} className="text-pastel-lemon" />
-                                    <span className="font-semibold text-white/90 text-sm tracking-widest uppercase">Most Popular</span>
+                                <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 bg-white border border-slate-200 mb-8 shadow-sm">
+                                    <Sparkles size={12} className="text-amber-400" />
+                                    <span className="font-semibold text-slate-700 text-sm tracking-widest uppercase">Most Popular</span>
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-white mb-2">Growth</h3>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Growth</h3>
                                 <div className="flex items-baseline gap-1 mb-1">
-                                    <span className="text-5xl font-serif font-bold text-white">₹999</span>
-                                    <span className="text-slate-400">/month</span>
+                                    <span className="text-5xl font-serif font-bold text-slate-900">₹999</span>
+                                    <span className="text-slate-500">/month</span>
                                 </div>
-                                <div className="text-xs text-pastel-mint font-medium mb-8">approx ₹33/day</div>
+                                <div className="text-xs text-green-600 font-medium mb-8">approx ₹33/day</div>
 
-                                <p className="text-slate-300 mb-8 border-b border-white/10 pb-8">The full marketing stack for scaling brands.</p>
+                                <p className="text-slate-500 mb-8 border-b border-slate-200 pb-8">The full marketing stack for scaling brands.</p>
 
                                 <ul className="space-y-4 mb-8">
                                     {["Unlimited AI Creative Gen", "Weekly Strategy Calls", "Performance Dashboard", "Competitor Analysis"].map((feat, idx) => (
@@ -59,12 +51,12 @@ export const Pricing: React.FC = () => {
                                             <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-green-400 to-emerald-500 flex items-center justify-center shadow-lg shadow-green-900/20 group-hover:scale-110 transition-transform duration-300">
                                                 <Check size={14} className="text-white" strokeWidth={3} />
                                             </div>
-                                            <span className="text-white/90">{feat}</span>
+                                            <span className="text-slate-700 font-medium">{feat}</span>
                                         </li>
                                     ))}
                                 </ul>
 
-                                <button className="w-full py-4 rounded-xl font-bold bg-white text-slate-900 hover:bg-pastel-lemon transition-all flex items-center justify-center gap-2 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                                <button className="w-full py-4 rounded-xl font-bold bg-slate-900 text-white hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl">
                                     Get Onboarded
                                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                                 </button>
