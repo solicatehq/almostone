@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar } from './components/layout/Navbar';
 import { Hero } from './components/landing/Hero';
-import { MockSection } from './components/landing/MockSection';
+
 import { LogoMarquee } from './components/landing/LogoMarquee';
 import { Comparison } from './components/landing/Comparison';
 import { Features } from './components/landing/Features';
@@ -45,7 +45,7 @@ function App() {
           <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-pastel-mauve/50 rounded-full blur-3xl pointer-events-none"></div>
 
           <Hero />
-          <MockSection />
+
           <LogoMarquee />
 
           <Comparison />
