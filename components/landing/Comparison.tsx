@@ -4,9 +4,7 @@ import { AnimateInView } from '../ui/AnimateInView';
 
 export const Comparison: React.FC = () => {
     return (
-        <section className="py-24 px-4 bg-[#fafafa] relative overflow-hidden">
-            {/* Background decoration */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pastel-mauve/10 rounded-full blur-3xl pointer-events-none"></div>
+        <section className="py-24 px-4 relative">
 
             <div className="max-w-6xl mx-auto relative z-10">
                 <AnimateInView className="text-center mb-16">

@@ -6,7 +6,7 @@ export const CTA: React.FC = () => {
   return (
     <footer className="relative pt-32 pb-12 px-4 overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-pastel-ice/20 to-[#fafafa] -z-20"></div>
+      <div className="absolute inset-0 z-0"></div>
 
       <div className="max-w-4xl mx-auto text-center">
         <AnimateInView>

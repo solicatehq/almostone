@@ -4,7 +4,7 @@ import { Palette, TrendingUp, Zap, Tv, Target } from 'lucide-react';
 
 export const Features: React.FC = () => {
   return (
-    <section id="features" className="py-24 px-4 bg-[#fafafa]">
+    <section id="features" className="py-24 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">

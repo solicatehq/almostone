@@ -31,7 +31,7 @@ const steps = [
 
 export const Process: React.FC = () => {
     return (
-        <section className="py-24 px-4 bg-[#fafafa] overflow-hidden">
+        <section className="py-24 px-4 relative">
             <div className="max-w-6xl mx-auto">
                 <AnimateInView className="text-center mb-20">
                     <h2 className="text-4xl md:text-5xl font-serif text-slate-900 mb-4">
